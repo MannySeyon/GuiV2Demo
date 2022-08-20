@@ -5,7 +5,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.samp.guiv2.SceneController">
    <children>
-      <Button layoutX="245.0" layoutY="188.0" mnemonicParsing="false" onAction="#switchToScene3" text="SwItch to Scene 3" />
-      <Button layoutX="263.0" layoutY="296.0" mnemonicParsing="false" text="To Scene 2" />
+      <Button layoutX="232.0" layoutY="119.0" mnemonicParsing="false" onAction="#switchToScene3" prefHeight="48.0" prefWidth="136.0" text="SwItch to Scene 3" />
+      <Button layoutX="227.0" layoutY="229.0" mnemonicParsing="false" onAction="#switchToMain" prefHeight="56.0" prefWidth="147.0" text="To Main Screen" />
    </children>
 </AnchorPane>

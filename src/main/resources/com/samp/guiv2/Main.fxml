@@ -12,8 +12,9 @@
       <Button layoutX="505.0" layoutY="188.0" mnemonicParsing="false" onAction="#Right" stylesheets="@App.css" text="Right" />
       <Button layoutX="277.0" layoutY="334.0" mnemonicParsing="false" onAction="#Down" text="Down" />
       <Circle fx:id="myCircle" accessibleText="Move Me" fill="DODGERBLUE" layoutX="300.0" layoutY="200.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
-      <Label fx:id="circleLabel" layoutX="15.0" layoutY="175.0" prefHeight="26.0" prefWidth="574.0" stylesheets="@App.css" text="Move Me!" />
+      <Label fx:id="circleLabel" layoutX="8.0" layoutY="188.0" prefHeight="26.0" prefWidth="574.0" stylesheets="@App.css" text="Move Me!" />
       <Label fx:id="titleLabel" layoutX="13.0" layoutY="14.0" prefHeight="26.0" prefWidth="574.0" text="Direction Control" />
-      <Button fx:id="switchScenes" layoutX="476.0" layoutY="344.0" mnemonicParsing="false" onAction="#switchToScene2" prefHeight="45.0" prefWidth="113.0" text="Change Screens" />
+      <Button fx:id="switchScenes" layoutX="512.0" layoutY="363.0" mnemonicParsing="false" onAction="#switchToScene2" prefHeight="26.0" prefWidth="77.0" text="Screen 2" />
+      <Button fx:id="switchScenes1" layoutX="10.0" layoutY="363.0" mnemonicParsing="false" onAction="#switchToScene3" prefHeight="26.0" prefWidth="77.0" text="Screen 3" />
    </children>
 </AnchorPane>

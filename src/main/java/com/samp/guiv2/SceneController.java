@@ -6,6 +6,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
 import java.io.IOException;
@@ -63,7 +64,7 @@ public class SceneController {
             stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
 
             //Pass the new fxml path to scene variable
-            scene = new Scene(root);
+            scene = new Scene(root, Color.INDIGO);
             //pass scene to stage
             stage.setScene(scene);
             stage.show();
@@ -76,7 +77,7 @@ public class SceneController {
             stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
 
             //Pass the new fxml path to scene variable
-            scene = new Scene(root);
+            scene = new Scene(root, Color.DARKCYAN);
             //pass scene to stage
             stage.setScene(scene);
             stage.show();
