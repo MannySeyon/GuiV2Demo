@@ -10,9 +10,9 @@ import javafx.stage.Stage;
 public class Main extends Application {
     @Override
     public void start(Stage stage) throws Exception {
-       Parent root  = FXMLLoader.load(getClass().getResource("Main.fxml"));
+       Parent root  = FXMLLoader.load(getClass().getResource("Scene2.fxml"));
 
-      //Create Scenes
+        //Create Scenes
         Scene scene = new Scene(root);
         //Scene scene1 = new Scene(root);
 
