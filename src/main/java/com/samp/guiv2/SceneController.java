@@ -70,6 +70,7 @@ public class SceneController {
             stage.show();
 
         }
+
         public void switchToScene3(ActionEvent event) throws IOException {
         Parent root  = FXMLLoader.load(getClass().getResource("Scene3.fxml"));
 
