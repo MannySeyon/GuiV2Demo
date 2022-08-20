@@ -43,6 +43,19 @@ public class SceneController {
     }
 
         //Method to switch scenes
+        public void switchToMain(ActionEvent event) throws IOException {
+            Parent root  = FXMLLoader.load(getClass().getResource("Main.fxml"));
+
+            //get Source cast to a node //Pass node to Stage
+            stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+
+            //Pass the new fxml path to scene variable
+            scene = new Scene(root);
+            //pass scene to stage
+            stage.setScene(scene);
+            stage.show();
+
+        }
          public void switchToScene2(ActionEvent event) throws IOException {
             Parent root  = FXMLLoader.load(getClass().getResource("Scene2.fxml"));
 
