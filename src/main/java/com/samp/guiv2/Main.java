@@ -16,10 +16,12 @@ public class Main extends Application {
         Scene scene = new Scene(root);
         //Scene scene1 = new Scene(root);
 
-        //Add Image
-        Image lakpaLLC = new Image("xoxo.png" );
+        //Add Image-File in Resource file
+        Image lakpaLLC = new Image("xoxo.png");
         //Pass Image to Stage(Windows Label Pic)
         stage.getIcons().add(lakpaLLC);
+
+
 
         //Pass stylesheet (CSS) to scene
         //scene.getStylesheets().add(getClass().getResource("App.css").toExternalForm());
@@ -29,7 +31,6 @@ public class Main extends Application {
 
         scene.getStylesheets().add(css);
         //scene1.getStylesheets().add(css);
-
 
         //Pass Scene to stage
         stage.setScene(scene);

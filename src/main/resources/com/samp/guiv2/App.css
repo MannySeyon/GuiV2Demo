@@ -1,0 +1,20 @@
+/*
+# : Style an item by a specific ID
+{} : Domain of properties
+.ClassName : Style an entire class of Items
+.root : style Root node
+
+ */
+.root{
+    /* Style Color in FX
+    Hex Values
+    or Colors
+    */
+    -fx-background-color: lightskyblue;
+}
+.label{
+    -fx-font-size: 12;
+}
+.button{
+    -fx-background-color: grey;
+}
