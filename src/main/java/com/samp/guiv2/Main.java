@@ -11,7 +11,7 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         //First Page
-       Parent root  = FXMLLoader.load(getClass().getResource("Main.fxml"));
+       Parent root  = FXMLLoader.load(getClass().getResource("Maincc.fxml"));
 
         //Create Scenes
         Scene scene = new Scene(root);
@@ -28,9 +28,9 @@ public class Main extends Application {
         //scene.getStylesheets().add(getClass().getResource("App.css").toExternalForm());
 
         //For multiple scenes
-        String css =this.getClass().getResource("App.css").toExternalForm();
+        //String css =this.getClass().getResource("App.css").toExternalForm();
 
-        scene.getStylesheets().add(css);
+        //scene.getStylesheets().add(css);
         //scene1.getStylesheets().add(css);
 
         //Pass Scene to stage
