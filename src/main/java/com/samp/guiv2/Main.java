@@ -22,14 +22,10 @@ public class Main extends Application {
         //Pass Image to Stage(Windows Label Pic)
         stage.getIcons().add(lakpaLLC);
 
-
-
         //Pass stylesheet (CSS) to scene
         //scene.getStylesheets().add(getClass().getResource("App.css").toExternalForm());
-
         //For multiple scenes
         //String css =this.getClass().getResource("App.css").toExternalForm();
-
         //scene.getStylesheets().add(css);
         //scene1.getStylesheets().add(css);
 

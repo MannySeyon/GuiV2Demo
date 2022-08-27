@@ -5,3 +5,6 @@
     */
     -fx-background-color: Indigo;
 }
+.radio-button{
+    -fx-text-fill: white;
+}

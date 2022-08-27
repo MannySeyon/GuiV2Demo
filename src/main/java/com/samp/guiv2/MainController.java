@@ -6,6 +6,9 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
@@ -13,8 +16,21 @@ import java.io.IOException;
 
 
 //Controller Class with methods for Functionality
-public class SceneController {
-  //FXML Loader passes Values into Controller class
+public class MainController {
+
+    @FXML
+    public Button switchToScene3;
+    @FXML
+    public Button switchToScene2;
+
+    @FXML
+   private Label titleLabel;
+    @FXML
+    private Label circleLabel;
+
+    @FXML
+    private AnchorPane anchorPane;
+    //FXML Loader passes Values into Controller class
       private Stage stage;
       private Scene scene;
 
@@ -43,20 +59,9 @@ public class SceneController {
         myCircle.setCenterX(x+=10);
     }
 
+
         //Method to switch scenes
-        public void switchToMain(ActionEvent event) throws IOException {
-            Parent root  = FXMLLoader.load(getClass().getResource("Maincc.fxml"));
-
-            //get Source cast to a node //Pass node to Stage
-            stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
-
-            //Pass the new fxml path to scene variable
-            scene = new Scene(root);
-            //pass scene to stage
-            stage.setScene(scene);
-            stage.show();
-
-        }
+         @FXML
          public void switchToScene2(ActionEvent event) throws IOException {
             Parent root  = FXMLLoader.load(getClass().getResource("Scene2.fxml"));
 
@@ -71,6 +76,7 @@ public class SceneController {
 
         }
 
+        @FXML
         public void switchToScene3(ActionEvent event) throws IOException {
         Parent root  = FXMLLoader.load(getClass().getResource("Scene3.fxml"));
 
@@ -83,5 +89,33 @@ public class SceneController {
             stage.setScene(scene);
             stage.show();
         }
+    @FXML
+    public void switchToScene4(ActionEvent event) throws IOException {
+        Parent root  = FXMLLoader.load(getClass().getResource("Scene4.fxml"));
+
+        //get Source cast to a node //Pass node to Stage
+        stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+
+        //Pass the new fxml path to scene variable
+        scene = new Scene(root, Color.INDIGO);
+        //pass scene to stage
+        stage.setScene(scene);
+        stage.show();
 
     }
+    @FXML
+    public void switchToScene5(ActionEvent event) throws IOException {
+        Parent root  = FXMLLoader.load(getClass().getResource("Scene5.fxml"));
+
+        //get Source cast to a node //Pass node to Stage
+        stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
+
+        //Pass the new fxml path to scene variable
+        scene = new Scene(root, Color.INDIGO);
+        //pass scene to stage
+        stage.setScene(scene);
+        stage.show();
+
+    }
+
+}

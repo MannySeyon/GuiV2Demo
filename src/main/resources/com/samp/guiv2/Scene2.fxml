@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@Scene2.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.samp.guiv2.SceneController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="443.0" prefWidth="669.0" stylesheets="@Scene2.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.samp.guiv2.Scene2Controller">
    <children>
-      <Button layoutX="232.0" layoutY="119.0" mnemonicParsing="false" onAction="#switchToScene3" prefHeight="48.0" prefWidth="136.0" text="SwItch to Scene 3" />
-      <Button layoutX="227.0" layoutY="229.0" mnemonicParsing="false" onAction="#switchToMain" prefHeight="56.0" prefWidth="147.0" text="To Main Screen" />
+      <Button fx:id="switchToScene3" layoutX="452.0" layoutY="364.0" mnemonicParsing="false" onAction="#switchToScene3" prefHeight="48.0" prefWidth="136.0" text="SwItch to Scene 3" />
+      <Button fx:id="switchToScene2" layoutX="88.0" layoutY="364.0" mnemonicParsing="false" onAction="#switchToMain" prefHeight="48.0" prefWidth="130.0" text="To Main Screen" />
+      <CheckBox fx:id="meCheckBox" layoutX="251.0" layoutY="316.0" mnemonicParsing="false" onAction="#change" prefHeight="48.0" prefWidth="168.0" text="1ST/2ND" />
+      <Label fx:id="meLabel" layoutX="218.0" layoutY="268.0" prefHeight="48.0" prefWidth="234.0" text="ICHII" />
+      <ImageView fx:id="meImageView" fitHeight="261.0" fitWidth="439.0" layoutX="204.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="/xoxo.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

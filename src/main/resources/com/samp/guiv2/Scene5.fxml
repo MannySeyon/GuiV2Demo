@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.samp.guiv2.Scene5Controller">
+   <children>
+      <ProgressBar fx:id="progressBar" layoutX="149.0" layoutY="282.0" prefHeight="29.0" prefWidth="296.0" progress="0.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="150.0" />
+      <Button fx:id="progressButton" layoutX="274.0" layoutY="220.0" mnemonicParsing="false" onAction="#incrementProgress" text="Button" />
+      <Label fx:id="progressLabel" alignment="CENTER" layoutX="238.0" layoutY="153.0" prefHeight="47.0" prefWidth="126.0" text="Progress">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
